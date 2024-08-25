@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Processor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Data Processor</h1>
+    <textarea id="jsonInput" placeholder="Enter JSON data"></textarea>
+    <button onclick="handleSubmit()">Submit</button>
+    <p id="error" class="error"></p>
+    <div id="filterContainer" class="hidden">
+      <select id="filterSelect" multiple>
+        <option value="Alphabets">Alphabets</option>
+        <option value="Numbers">Numbers</option>
+        <option value="Highest lowercase alphabet">Highest lowercase alphabet</option>
+      </select>
+    </div>
+    <div>
+      <h2>Response</h2>
+      <p id="response"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
